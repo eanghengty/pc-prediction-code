@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1">
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/custom_pink">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/thunder"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="AUTHENTICATION"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            >
+
+        </TextView>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/plus"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp">
+
+        </ImageView>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/top_bar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="SIGN UP"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/username"
+        android:gravity="center"
+        android:layout_below="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+       >
+        <TextView
+
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="USERNAME"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical">
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/input_email"
+        android:layout_below="@+id/username"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/white">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your username"
+                android:textColor="@color/white"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/password"
+        android:layout_below="@+id/input_email"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="PASSWORD"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/input_password"
+        android:layout_below="@+id/password"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/white">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your Password"
+                android:textColor="@color/white"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/confirm_password"
+        android:layout_below="@+id/input_password"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="CONFIRM PASSWORD"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/confirm_password_input"
+        android:layout_below="@+id/confirm_password"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter Confirm Password"
+                android:textColor="@color/white">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/confirm_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+
+            android:gravity="center"
+
+
+            android:text="Sign Up"
+
+            >
+
+        </Button>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33ffffff">
+
+        <ImageView
+            android:id="@+id/home_tab"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"
+            android:layout_toStartOf="@+id/component_tab"
+            android:src="@drawable/home">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/component_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Components"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+
+        </TextView>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_tab"
+
+
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="26dp"
+            android:layout_toStartOf="@id/component_title"
+
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@id/component_title"
+            android:text="Setting"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/component_tab"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/component">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/setting_tab"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@id/component_tab"
+            android:src="@drawable/settings">
+
+        </ImageView>
+
+        <View
+            android:id="@+id/active_bar_on_component"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+
+            android:layout_centerHorizontal="true"
+
+            android:background="#00ffffff">
+
+        </View>
+
+        <View
+            android:id="@+id/active_bar_on_setting"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="50dp"
+
+            android:layout_toEndOf="@+id/active_bar_on_component"
+            android:background="@color/custom_pink">
+
+        </View>
+
+        <View
+            android:id="@+id/active_bar_on_home"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_marginEnd="50dp"
+
+            android:layout_toStartOf="@+id/active_bar_on_component"
+            android:background="#00ffffff">
+
+        </View>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

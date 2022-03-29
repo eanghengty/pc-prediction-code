@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_screen">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/logo"
+            android:layout_centerInParent="true">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Welcome to DeskPre"
+            android:textColor="@color/custom_pink"
+            android:gravity="center"
+            android:layout_below="@+id/logo"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_text"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <Button
+
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="GET START"
+
+                >
+
+            </Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

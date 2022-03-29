@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1">
+
+
+
+<!--    top-bar-->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/custom_pink">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/thunder">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="INTEL CORE 2 DUO E7200"
+            android:textColor="@color/white"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/plus">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/title_build"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrows"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+
+            android:gravity="center"
+            android:text="CPU"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="20dp"
+            android:src="@drawable/hamburger"
+            android:layout_gravity="center_vertical">
+
+        </ImageView>
+    </LinearLayout>
+
+
+<!--    carousel-->
+    <LinearLayout
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_build"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/component_detail"
+            >
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/circle">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/white_circle"
+                android:layout_marginStart="5dp">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/white_circle"
+                android:layout_marginStart="5dp">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/white_circle"
+                android:layout_marginStart="5dp">
+
+            </ImageView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/where_to_buy_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="WHERE TO BUY"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+<!--    shop_choice-->
+    <RelativeLayout
+        android:id="@+id/shop_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show">
+
+        <LinearLayout
+            android:id="@+id/price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="250$"
+                android:textColor="@color/white"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="250$"
+                android:textColor="@color/white"
+                android:textSize="18sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/price"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tk_custom">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/gold_one">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/price"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="GRAB">
+
+            </Button>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="GRAB">
+
+            </Button>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+<!--    information_title-->
+    <LinearLayout
+        android:id="@+id/information_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/shop_choice">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="INFORMATION"
+            android:textColor="@color/white">
+
+        </TextView>
+    </LinearLayout>
+
+<!--    scrollable_information_detail-->
+    <!--    bottom_bar__layout-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/information_text"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="-16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/information_text"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|right"
+                    android:text="Motherboard Socket:"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Intel Socket 775"
+                    android:textColor="@color/white"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|right"
+                    android:text="Code Name:"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Wolfdale"
+                    android:textColor="@color/white"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|right"
+                    android:text="Release Date:"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="April 20th, 2008"
+                    android:textColor="@color/white"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|right"
+                    android:text="Clock Speed:"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="2.53 GHz"
+                    android:textColor="@color/white"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|right"
+                    android:text="Thread:"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|right"
+                    android:text="Core:"
+                    android:textColor="@color/white"
+                    android:textSize="12sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="ADD BUILD"
+                android:focusableInTouchMode="false">
+
+            </Button>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"></RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33ffffff">
+
+        <!--home_tab-->
+        <ImageView
+            android:id="@+id/home_tab"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"
+            android:layout_toStartOf="@+id/component_tab"
+            android:src="@drawable/home">
+
+        </ImageView>
+        <!--tab_title-->
+        <TextView
+            android:id="@+id/component_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Components"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+
+        </TextView>
+        <!--tab_title-->
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_tab"
+
+
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="26dp"
+            android:layout_toStartOf="@id/component_title"
+
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+
+        </TextView>
+        <!--tab_title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@id/component_title"
+            android:text="Setting"
+            android:textColor="@color/white"
+            android:textSize="10sp">
+
+        </TextView>
+        <!--component_tab-->
+        <ImageView
+            android:id="@+id/component_tab"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/component">
+
+        </ImageView>
+        <!--       setting_tab-->
+        <ImageView
+            android:id="@+id/setting_tab"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@id/component_tab"
+            android:src="@drawable/settings">
+
+        </ImageView>
+        <!--        purple-active-bar-->
+        <View
+            android:id="@+id/active_bar_on_component"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+
+            android:layout_centerHorizontal="true"
+
+            android:background="#00ffffff">
+
+        </View>
+        <!--        purple-active-bar-->
+        <View
+            android:id="@+id/active_bar_on_setting"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="50dp"
+
+            android:layout_toEndOf="@+id/active_bar_on_component"
+            android:background="#00ffffff">
+
+        </View>
+        <!--        purple-active-bar-->
+        <View
+            android:id="@+id/active_bar_on_home"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_marginEnd="50dp"
+
+            android:layout_toStartOf="@+id/active_bar_on_component"
+            android:background="@color/custom_pink">
+
+        </View>
+    </RelativeLayout>
+
+
+</RelativeLayout>
