@@ -405,7 +405,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/custom_pink">
+        android:background="@color/white">
 
         <!--home_tab-->
         <ImageView
@@ -426,7 +426,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:text="Components"
-            android:textColor="@color/white"
+
             android:textSize="10sp">
 
         </TextView>
@@ -444,7 +444,7 @@
             android:layout_toStartOf="@id/component_title"
 
             android:text="Home"
-            android:textColor="@color/white"
+
             android:textSize="10sp">
 
         </TextView>
@@ -456,7 +456,7 @@
             android:layout_marginStart="26dp"
             android:layout_toEndOf="@id/component_title"
             android:text="Setting"
-            android:textColor="@color/white"
+
             android:textSize="10sp">
 
         </TextView>

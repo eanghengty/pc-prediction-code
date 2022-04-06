@@ -2,13 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_1">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_1"
+    tools:context=".Component_activity">
     <RelativeLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/custom_pink">
         <ImageView
+            android:id="@+id/thunder"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/thunder"
@@ -45,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/top_bar">
         <LinearLayout
+            
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,6 +56,7 @@
             android:gravity="center"
             >
             <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -68,79 +73,234 @@
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cpu">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView>
+
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_margin="10dp"
                         android:layout_height="130dp"
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cpu">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_margin="10dp"
                         android:layout_height="130dp"
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cpu">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_margin="10dp"
                         android:layout_height="130dp"
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cpu">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:gravity="center"></TextView>
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_margin="10dp"
                         android:layout_height="130dp"
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cpu">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_margin="10dp"
                         android:layout_height="130dp"
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cpu">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_margin="10dp"
                         android:layout_height="130dp"
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cpu">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_margin="10dp"
                         android:layout_height="130dp"
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cpu">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_margin="10dp"
                         android:layout_height="130dp"
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/cpu">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView>
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_margin="10dp"
                         android:layout_height="130dp"
                         android:layout_width="150dp"
                         android:background="@color/custom_yellow"
                         android:orientation="vertical"
-                        ></LinearLayout>
+                        android:gravity="center"
+                        > <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/cpu">
+
+                    </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPU"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"></TextView></LinearLayout>
+                    
                 </GridLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"></LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:background="#33ffffff">
+        android:background="#ffffff">
 
         <ImageView
             android:id="@+id/home_tab"
@@ -160,7 +320,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:text="Components"
-            android:textColor="@color/white"
+
             android:textSize="10sp">
 
         </TextView>
@@ -178,10 +338,11 @@
             android:layout_toStartOf="@id/component_title"
 
             android:text="Home"
-            android:textColor="@color/white"
+
             android:textSize="10sp">
 
         </TextView>
+        used the service before or haven’t us
 
         <TextView
             android:layout_width="wrap_content"
@@ -190,7 +351,7 @@
             android:layout_marginStart="26dp"
             android:layout_toEndOf="@id/component_title"
             android:text="Setting"
-            android:textColor="@color/white"
+
             android:textSize="10sp">
 
         </TextView>
